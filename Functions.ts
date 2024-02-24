@@ -1,6 +1,7 @@
 
-
-function print(p1: any, p2: string | bigint): string | number | boolean {
-  
-  return 100
+function genFun<T>(param: T): T {
+  return param
 }
+
+const fun = genFun<number>(12)
+console.log(fun);
